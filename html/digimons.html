@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiWiki - Galería de Digimons</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="png" href="../images/Digivice.png">
+</head>
+<body>
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <header class="digi-header">
+            <canvas id="matrix-canvas"></canvas>
+            <div class="header-content">
+                <div class="title-container">
+                    <img src="../images/Digmon Pixel.png" alt="Digimon Pixel" class="header-icon">
+                    <h1>igiWiki</h1>
+                </div>
+                <!-- Siluetas de Digimon -->
+                <img src="../images/AgumonSilueta.png" alt="Agumon Silueta" class="digimon-silueta digimon-left">
+                <img src="../images/GabumonSiluetaInvertido.png" alt="Gabumon Silueta" class="digimon-silueta digimon-right">
+            </div>
+            <p>¡Explora el Mundo Digital como nunca antes!</p>
+        </header>
+        <!-- Índice -->
+        <nav id="top-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="digimons.html">Digimons</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="Trivial.html">Trivial</a></li>
+            </ul>
+        </nav>
+        <!-- Índice de series -->
+        <section id="digimon-index" class="digital-box">
+            <h2>Temporadas</h2>
+            <ul class="series-index">
+                <li><a href="#adventure">Digimon Adventure</a></li>
+                <li><a href="#adventure02">Digimon Adventure 02</a></li>
+                <li><a href="#tamers">Digimon Tamers</a></li>
+                <li><a href="#frontier">Digimon Frontier</a></li>
+                <li><a href="#otros">Otros Digimons</a></li>
+            </ul>
+        </section>
+        <!-- Galería de Digimons -->
+        <section class="digital-box">
+            <h2>Galería de Digimons</h2>
+            <!-- Digimon Adventure -->
+            <div id="adventure" class="series-section card-box">
+                <h3>Digimon Adventure</h3>
+                <div class="digimon-grid">
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Agumon.png" alt="Agumon">
+                        <h4>Agumon</h4>
+                        <p>Un Digimon reptil valiente con mucho apetito.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Gabumon.png" alt="Gabumon">
+                        <h4>Gabumon</h4>
+                        <p>Un Digimon con piel de lobo muy leal.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Biyomon.png" alt="Biyomon">
+                        <h4>Biyomon</h4>
+                        <p>Un Digimon ave rosada con un corazón cálido.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Tentomon.png" alt="Tentomon">
+                        <h4>Tentomon</h4>
+                        <p>Un Digimon insecto con gran inteligencia.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Palmon.png" alt="Palmon">
+                        <h4>Palmon</h4>
+                        <p>Un Digimon planta con un carácter fuerte.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Gomamon.png" alt="Gomamon">
+                        <h4>Gomamon</h4>
+                        <p>Un Digimon acuático juguetón.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Patamon.png" alt="Patamon">
+                        <h4>Patamon</h4>
+                        <p>Un Digimon volador con un corazón puro.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Gatomon.png" alt="Gatomon">
+                        <h4>Gatomon</h4>
+                        <p>Un Digimon felino con gran agilidad.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Botamon.png" alt="Botamon">
+                        <h4>Botamon</h4>
+                        <p>La forma Fresh de Agumon, un pequeño Digimon recién nacido.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Greymon.png" alt="Greymon">
+                        <h4>Greymon</h4>
+                        <p>La digievolución de Agumon, un dinosaurio poderoso.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Garurumon.png" alt="Garurumon">
+                        <h4>Garurumon</h4>
+                        <p>La digievolución de Gabumon, un lobo feroz.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Birdramon.webp" alt="Birdramon">
+                        <h4>Birdramon</h4>
+                        <p>La digievolución de Biyomon, un ave de fuego.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Kabuterimon.png" alt="Kabuterimon">
+                        <h4>Kabuterimon</h4>
+                        <p>La digievolución de Tentomon, un insecto blindado.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Togemon.png" alt="Togemon">
+                        <h4>Togemon</h4>
+                        <p>La digievolución de Palmon, un cactus boxeador.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Ikkakumon.png" alt="Ikkakumon">
+                        <h4>Ikkakumon</h4>
+                        <p>La digievolución de Gomamon, una bestia marina.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Angemon.png" alt="Angemon">
+                        <h4>Angemon</h4>
+                        <p>La digievolución de Patamon, un ángel guerrero.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Angewomon.png" alt="Angewomon">
+                        <h4>Angewomon</h4>
+                        <p>La digievolución de Gatomon, un ángel celestial.</p>
+                        <p><strong>Series:</strong> Adventure, Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/MetalGreymon.png" alt="MetalGreymon">
+                        <h4>MetalGreymon</h4>
+                        <p>La digievolución avanzada de Agumon, un dinosaurio cyborg.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/WereGarurumon.png" alt="WereGarurumon">
+                        <h4>WereGarurumon</h4>
+                        <p>La digievolución avanzada de Gabumon, un lobo bípedo feroz.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/WarGreymon.png" alt="WarGreymon">
+                        <h4>WarGreymon</h4>
+                        <p>La digievolución definitiva de Agumon, un guerrero dragón.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/MetalGarurumon.png" alt="MetalGarurumon">
+                        <h4>MetalGarurumon</h4>
+                        <p>La digievolución definitiva de Gabumon, un lobo cyborg.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/MetalSeadramon.png" alt="MetalSeadramon">
+                        <h4>MetalSeadramon</h4>
+                        <p>Un Digimon marino gigante, villano en el Mundo Digital.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Ladydevimon.webp" alt="LadyDevimon">
+                        <h4>LadyDevimon</h4>
+                        <p>Un Digimon demoníaco con un aura oscura.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Devimon.png" alt="Devimon">
+                        <h4>Devimon</h4>
+                        <p>Un Digimon maligno que controla las sombras.</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Sukamon.png" alt="Sukamon">
+                        <h4>Sukamon</h4>
+                        <p>Un Digimon hecho de desechos, con una personalidad cómica (Culo con caca).</p>
+                        <p><strong>Series:</strong> Adventure</p>
+                    </div>
+                    <!-- Más Digimons aquí -->
+                </div>
+            </div>
+            <!-- Digimon Adventure 02 -->
+            <section class="digimon-gallery card-box">
+            <div id="adventure02" class="series-section">
+                <h3>Digimon Adventure 02</h3>
+                <div class="digimon-grid">
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Veemon.png" alt="Veemon">
+                        <h4>Veemon</h4>
+                        <p>Un Digimon dragón pequeño con gran corazón.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Hawkmon.png" alt="Hawkmon">
+                        <h4>Hawkmon</h4>
+                        <p>Un Digimon ave elegante y leal.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Armadillomon.png" alt="Armadillomon">
+                        <h4>Armadillomon</h4>
+                        <p>Un Digimon acorazado con un carácter relajado.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Wormmon.webp" alt="Wormmon">
+                        <h4>Wormmon</h4>
+                        <p>Un Digimon insecto tímido pero valiente.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Flamedramon.png" alt="Flamedramon">
+                        <h4>Flamedramon</h4>
+                        <p>La digievolución armada de Veemon con el Digi-Egg del Valor.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Raidramon.png" alt="Raidramon">
+                        <h4>Raidramon</h4>
+                        <p>La digievolución armada de Veemon con el Digi-Egg de la Amistad.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Aquilamon.png" alt="Aquilamon">
+                        <h4>Aquilamon</h4>
+                        <p>La digievolución de Hawkmon, un águila majestuosa.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Ankylomon.png" alt="Ankylomon">
+                        <h4>Ankylomon</h4>
+                        <p>La digievolución de Armadillomon, un dinosaurio acorazado.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Stingmon.webp" alt="Stingmon">
+                        <h4>Stingmon</h4>
+                        <p>La digievolución de Wormmon, un insecto guerrero.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/ExVeemon.png" alt="ExVeemon">
+                        <h4>ExVeemon</h4>
+                        <p>La digievolución natural de Veemon, un dragón fuerte.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Paildramon.png" alt="Paildramon">
+                        <h4>Paildramon</h4>
+                        <p>La digievolución DNA de ExVeemon y Stingmon.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Silphymon.png" alt="Silphymon">
+                        <h4>Silphymon</h4>
+                        <p>La digievolución DNA de Aquilamon y Gatomon.</p>
+                        <p><strong>Series:</strong> Adventure 02</p>
+                    </div>
+                    <!-- Más Digimons aquí -->
+                </div>
+            </div>
+            </section>
+            <!-- Digimon Tamers -->
+            <section class="digimon-gallery card-box">
+            <div id="tamers" class="series-section">
+                <h3>Digimon Tamers</h3>
+                <div class="digimon-grid">
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Guilmon.png" alt="Guilmon">
+                        <h4>Guilmon</h4>
+                        <p>Un Digimon creado por Takato, con instintos salvajes.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Terriermon.png" alt="Terriermon">
+                        <h4>Terriermon</h4>
+                        <p>Un Digimon conejo pequeño pero valiente.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Renamon.png" alt="Renamon">
+                        <h4>Renamon</h4>
+                        <p>Un Digimon zorro ágil y misterioso.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Growlmon.png" alt="Growlmon">
+                        <h4>Growlmon</h4>
+                        <p>La digievolución de Guilmon, un dragón feroz.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Gargomon.webp" alt="Gargomon">
+                        <h4>Gargomon</h4>
+                        <p>La digievolución de Terriermon, un cazador armado.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Kyubimon.png" alt="Kyubimon">
+                        <h4>Kyubimon</h4>
+                        <p>La digievolución de Renamon, un zorro de nueve colas.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/WarGrowlmon.png" alt="WarGrowlmon">
+                        <h4>WarGrowlmon</h4>
+                        <p>La digievolución avanzada de Guilmon, un cyborg dragón.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Rapidmon.png" alt="Rapidmon">
+                        <h4>Rapidmon</h4>
+                        <p>La digievolución avanzada de Terriermon, un guerrero veloz.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Taomon.png" alt="Taomon">
+                        <h4>Taomon</h4>
+                        <p>La digievolución avanzada de Renamon, un mago místico.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Impmon.png" alt="Impmon">
+                        <h4>Impmon</h4>
+                        <p>Un Digimon travieso con un lado oscuro.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Beelzemon.webp" alt="Beelzemon">
+                        <h4>Beelzemon</h4>
+                        <p>La digievolución de Impmon, un demonio motociclista.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Calumon.png" alt="Calumon">
+                        <h4>Calumon</h4>
+                        <p>Un Digimon pequeño que facilita la digievolución.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Sakuyamon.webp" alt="Sakuyamon">
+                        <h4>Sakuyamon</h4>
+                        <p>La forma Mega de Renamon, una sacerdotisa mística y poderosa.</p>
+                        <p><strong>Series:</strong> Tamers</p>
+                    </div>
+                    <!-- Más Digimons aquí -->
+                </div>
+            </div>
+            </section>
+            <!-- Digimon Frontier -->
+            <section class="digimon-gallery card-box">
+            <div id="frontier" class="series-section">
+                <h3>Digimon Frontier</h3>
+                <div class="digimon-grid">
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Agnimon.png" alt="Agunimon">
+                        <h4>Agunimon</h4>
+                        <p>La forma Digimon de Takuya tras usar el Espíritu Humano del Fuego.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Lobomon.png" alt="Lobomon">
+                        <h4>Lobomon</h4>
+                        <p>La forma Digimon de Koji con el Espíritu Humano de la Luz.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Kazemon.png" alt="Kazemon">
+                        <h4>Kazemon</h4>
+                        <p>La forma Digimon de Zoe con el Espíritu Humano del Viento.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Beetlemon.png" alt="Beetlemon">
+                        <h4>Beetlemon</h4>
+                        <p>La forma Digimon de J.P. con el Espíritu Humano del Trueno.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Kumamon.png" alt="Kumamon">
+                        <h4>Kumamon</h4>
+                        <p>La forma Digimon de Tommy con el Espíritu Humano del Hielo.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/BurningGreymon.png" alt="BurningGreymon">
+                        <h4>BurningGreymon</h4>
+                        <p>La forma Bestia de Takuya con el Espíritu Bestia del Fuego.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/KendoGarurumon.webp" alt="KendoGarurumon">
+                        <h4>KendoGarurumon</h4>
+                        <p>La forma Bestia de Koji con el Espíritu Bestia de la Luz.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Zephyrmon.png" alt="Zephyrmon">
+                        <h4>Zephyrmon</h4>
+                        <p>La forma Bestia de Zoe con el Espíritu Bestia del Viento.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/MetalKabuterimon.webp" alt="MetalKabuterimon">
+                        <h4>MetalKabuterimon</h4>
+                        <p>La forma Bestia de J.P. con el Espíritu Bestia del Trueno.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Korikakumon.png" alt="Korikakumon">
+                        <h4>Korikakumon</h4>
+                        <p>La forma Bestia de Tommy con el Espíritu Bestia del Hielo.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Bokomon.png" alt="Bokomon">
+                        <h4>Bokomon</h4>
+                        <p>Un Digimon sabio que guía a los niños.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Leomon.png" alt="Leomon">
+                        <h4>Leomon</h4>
+                        <p>Un Digimon león noble y valiente, conocido por su sacrificio.</p>
+                        <p><strong>Series:</strong> Frontier, adventure, tamers</p>
+                    </div>
+                    <div class="digimon-card">
+                        <img src="../images/Digimons/Lucemon.webp" alt="Lucemon">
+                        <h4>Lucemon</h4>
+                        <p>Un ángel caído y villano principal, con un poder inmenso.</p>
+                        <p><strong>Series:</strong> Frontier</p>
+                    </div>
+                    <!-- Más Digimons aquí -->
+                </div>
+            </div>
+            </section>
+            <!-- Otros Digimons -->
+            <section class="digimon-gallery card-box">
+                <div id="otros" class="series-section">
+                    <h3>Otros Digimons</h3>
+                    <div class="digimon-grid">
+                        <div class="digimon-card">
+                            <img src="../images/Digimons/Gaogamon.png" alt="Gaogamon">
+                            <h4>Gaogamon</h4>
+                            <p>Un Digimon lobo poderoso, compañero de combate.</p>
+                            <p><strong>Series:</strong> Data Squad</p>
+                        </div>
+                    </div>
+                </div>
+                </section>
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

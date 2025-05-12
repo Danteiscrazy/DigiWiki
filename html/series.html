@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiWiki - Series</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="png" href="../images/Digivice.png">
+</head>
+<body>
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <header class="digi-header">
+            <canvas id="matrix-canvas"></canvas>
+            <div class="header-content">
+                <div class="title-container">
+                    <img src="../images/Digmon Pixel.png" alt="Digimon Pixel" class="header-icon">
+                    <h1>igiWiki</h1>
+                </div>
+                <!-- Siluetas de Digimon -->
+                <img src="../images/AgumonSilueta.png" alt="Agumon Silueta" class="digimon-silueta digimon-left">
+                <img src="../images/GabumonSiluetaInvertido.png" alt="Gabumon Silueta" class="digimon-silueta digimon-right">
+            </div>
+            <p>¡Explora el Mundo Digital como nunca antes!</p>
+        </header>
+        <!-- Índice -->
+        <nav id="top-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="digimons.html">Digimons</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="Trivial.html">Trivial</a></li>
+            </ul>
+        </nav>
+        <!-- Índice de series -->
+        <section id="digimon-index" class="digital-box">
+            <h2>Temporadas</h2>
+            <ul class="series-index">
+                <li><a href="#adventure">Digimon Adventure</a></li>
+                <li><a href="#adventure02">Digimon Adventure 02</a></li>
+                <li><a href="#tamers">Digimon Tamers</a></li>
+                <li><a href="#frontier">Digimon Frontier</a></li>
+            </ul>
+        </section>
+        <!-- Secciones de series -->
+        <section id="series-content" class="digital-box">
+            <h2>Series de Digimon</h2>
+            <!-- Digimon Adventure -->
+            <div id="adventure" class="series-section">
+                <section class="card-box">
+                <h3>Digimon Adventure</h3>
+                <img src="../images/Portadas/Adventure.jpg" alt="Portada Digimon Adventure" class="series-poster">
+                <h4>Trama</h4>
+                <p>Un grupo de niños, los "Niños Elegidos", es transportado al Mundo Digital, donde conocen a sus Digimon compañeros. Juntos enfrentan amenazas como Devimon y Myotismon, mientras descubren el poder de sus Crestas para desbloquear digievoluciones. La serie combina aventuras, amistad y batallas épicas, culminando en la lucha contra Apocalymon para salvar ambos mundos.</p>
+                <h4>Personajes Principales</h4>
+                <ul>
+                    <li>Tai Kamiya</li>
+                    <li>Matt Ishida</li>
+                    <li>Sora Takenouchi</li>
+                    <li>Izzy Izumi</li>
+                    <li>Mimi Tachikawa</li>
+                    <li>Joe Kido</li>
+                    <li>T.K. Takaishi</li>
+                    <li>Kari Kamiya</li>
+                </ul>
+                <h4>Digimons Protagonistas</h4>
+                <ul>
+                    <li><a href="digimons.html#adventure">Agumon</a></li>
+                    <li><a href="digimons.html#adventure">Gabumon</a></li>
+                    <li><a href="digimons.html#adventure">Biyomon</a></li>
+                    <li><a href="digimons.html#adventure">Tentomon</a></li>
+                    <li><a href="digimons.html#adventure">Palmon</a></li>
+                    <li><a href="digimons.html#adventure">Gomamon</a></li>
+                    <li><a href="digimons.html#adventure">Patamon</a></li>
+                    <li><a href="digimons.html#adventure">Gatomon</a></li>
+                </ul>
+                <h4>Openings</h4>
+                <div class="openings-container">
+                    <div class="opening-video">
+                        <h5>Opening Castellano</h5>
+                        <div class="video-container">
+                            <div class="video-frame">
+                                <video controls src="../videos/Adventure.mp4" class="series-video"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="openings-container">
+                    <div class="opening-audio">
+                        <div class="player-container">
+                            <div class="audio-player" data-src="../audio/Adventure.mp3">
+                                <div class="song-title">Digimon Adventure - Butterfly</div>
+                                <button class="play-pause-btn">▶️</button>
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                                </div>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <!-- Digimon Adventure 02 -->
+            <div id="adventure02" class="series-section">
+                <section class="card-box">
+                <h3>Digimon Adventure 02</h3>
+                <img src="../images/Portadas/Adventure02.jpg" alt="Portada Digimon Adventure 02" class="series-poster">
+                <h4>Trama</h4>
+                <p>Años después de *Adventure*, una nueva generación de Niños Elegidos enfrenta al Emperador Digimon, quien esclaviza Digimons. Con la ayuda de T.K. y Kari, los nuevos protagonistas usan Digi-Eggs para digievoluciones armadas y descubren la digievolución DNA. La serie explora temas de legado y trabajo en equipo, con un clímax contra MaloMyotismon.</p>
+                <h4>Personajes Principales</h4>
+                <ul>
+                    <li>Davis Motomiya</li>
+                    <li>Yolei Inoue</li>
+                    <li>Cody Hida</li>
+                    <li>Ken Ichijouji</li>
+                    <li>T.K. Takaishi</li>
+                    <li>Kari Kamiya</li>
+                </ul>
+                <h4>Digimons Protagonistas</h4>
+                <ul>
+                    <li><a href="digimons.html#adventure02">Veemon</a></li>
+                    <li><a href="digimons.html#adventure02">Hawkmon</a></li>
+                    <li><a href="digimons.html#adventure02">Armadillomon</a></li>
+                    <li><a href="digimons.html#adventure02">Wormmon</a></li>
+                    <li><a href="digimons.html#adventure">Patamon</a></li>
+                    <li><a href="digimons.html#adventure">Gatomon</a></li>
+                </ul>
+                <h4>Openings</h4>
+                <div class="openings-container">
+                    <div class="opening-video">
+                        <h5>Opening Castellano</h5>
+                        <div class="video-container">
+                            <div class="video-frame">
+                                <video controls src="../videos/Adventure02.mp4" class="series-video"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="openings-container">
+                    <div class="opening-audio">
+                        <div class="player-container">
+                            <div class="audio-player" data-src="../audio/Adventure02.mp3">
+                                <div class="song-title">Digimon Adventure 02 - Target</div>
+                                <button class="play-pause-btn">▶️</button>
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                                </div>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <!-- Digimon Tamers -->
+            <div id="tamers" class="series-section">
+                <section class="card-box">
+                <h3>Digimon Tamers</h3>
+                <img src="../images/Portadas/Tamers.jpg" alt="Portada Digimon Tamers" class="series-poster">
+                <h4>Trama</h4>
+                <p>En un mundo donde Digimon es un juego de cartas, Takato crea a Guilmon, que cobra vida. Junto a Henry y Rika, enfrenta Digimons salvajes que cruzan al mundo real. La serie tiene un tono más oscuro, explorando la relación entre humanos y Digimons, y culmina en una batalla contra los D-Reaper, una amenaza digital.</p>
+                <h4>Personajes Principales</h4>
+                <ul>
+                    <li>Takato Matsuki</li>
+                    <li>Henry Wong</li>
+                    <li>Rika Nonaka</li>
+                    <li>Jeri Katou</li>
+                    <li>Kazu Shioda</li>
+                    <li>Kenta Kitagawa</li>
+                </ul>
+                <h4>Digimons Protagonistas</h4>
+                <ul>
+                    <li><a href="digimons.html#tamers">Guilmon</a></li>
+                    <li><a href="digimons.html#tamers">Terriermon</a></li>
+                    <li><a href="digimons.html#tamers">Renamon</a></li>
+                    <li><a href="digimons.html#tamers">Impmon</a></li>
+                    <li><a href="digimons.html#tamers">Calumon</a></li>
+                </ul>
+                <h4>Openings</h4>
+                <div class="openings-container">
+                    <div class="opening-video">
+                        <h5>Opening Castellano</h5>
+                        <div class="video-container">
+                            <div class="video-frame">
+                                <video controls src="../videos/Tamers.mp4" class="series-video"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="openings-container">
+                    <div class="opening-audio">
+                        <div class="player-container">
+                            <div class="audio-player" data-src="../audio/Tamers.mp3">
+                                <div class="song-title">Digimon Tamers - The Biggest Dreamer</div>
+                                <button class="play-pause-btn">▶️</button>
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                                </div>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <!-- Digimon Frontier -->
+            <div id="frontier" class="series-section">
+                <section class="card-box">
+                <h3>Digimon Frontier</h3>
+                <img src="../images/Portadas/Frontier.jpg" alt="Portada Digimon Frontier" class="series-poster">
+                <h4>Trama</h4>
+                <p>Un grupo de niños es convocado al Mundo Digital por un mensaje misterioso. Usando Espíritus Digimon, se transforman en Digimons para luchar contra Cherubimon y sus fuerzas. La serie destaca por su mecánica de transformación y explora temas de confianza y redención, con una batalla final contra Lucemon.</p>
+                <h4>Personajes Principales</h4>
+                <ul>
+                    <li>Takuya Kanbara</li>
+                    <li>Koji Minamoto</li>
+                    <li>Zoe Orimoto</li>
+                    <li>J.P. Shibayama</li>
+                    <li>Tommy Himi</li>
+                    <li>Koichi Kimura</li>
+                </ul>
+                <h4>Digimons Protagonistas</h4>
+                <ul>
+                    <li><a href="digimons.html#frontier">Agunimon</a></li>
+                    <li><a href="digimons.html#frontier">Lobomon</a></li>
+                    <li><a href="digimons.html#frontier">Kazemon</a></li>
+                    <li><a href="digimons.html#frontier">Beetlemon</a></li>
+                    <li><a href="digimons.html#frontier">Kumamon</a></li>
+                    <li><a href="digimons.html#frontier">Bokomon</a></li>
+                </ul>
+                <h4>Openings</h4>
+                <div class="openings-container">
+                    <div class="opening-video">
+                        <h5>Opening Castellano</h5>
+                        <div class="video-container">
+                            <div class="video-frame">
+                                <video controls src="../videos/Frontier.mp4" class="series-video"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="openings-container">
+                    <div class="opening-audio">
+                        <div class="player-container">
+                            <div class="audio-player" data-src="../audio/Frontier.mp3">
+                                <div class="song-title">Digimon Frontier - Fire!!</div>
+                                <button class="play-pause-btn">▶️</button>
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="time-display">
+                                    <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                                </div>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

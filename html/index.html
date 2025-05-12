@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiWiki - Mundo Digital</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="png" href="../images/Digivice.png">
+</head>
+<body>
+    <!-- Contenido principal -->
+    <div id="main-content">
+        <header class="digi-header">
+            <canvas id="matrix-canvas"></canvas>
+            <div class="header-content">
+                <div class="title-container">
+                    <img src="../images/Digmon Pixel.png" alt="Digimon Pixel" class="header-icon">
+                    <h1>igiWiki</h1>
+                </div>
+                <!-- Siluetas de Digimon -->
+                <img src="../images/AgumonSilueta.png" alt="Agumon Silueta" class="digimon-silueta digimon-left">
+                <img src="../images/GabumonSiluetaInvertido.png" alt="Gabumon Silueta" class="digimon-silueta digimon-right">
+            </div>
+            <p>¡Explora el Mundo Digital como nunca antes!</p>
+        </header>
+        <!-- Índice -->
+        <nav id="top-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="digimons.html">Digimons</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="Trivial.html">Trivial</a></li>
+            </ul>
+        </nav>
+        <section class="presentation digital-box">
+            <h2>Bienvenido al Blog</h2>
+            <p>Este es tu portal al universo de Digimon. Aquí encontrarás análisis, lore, y todo lo que necesitas para convertirte en un auténtico Niño Elegido. 
+                ¡Prepárate para una aventura digital épica!</p>
+        </section>
+        <section id="digimon-del-dia" class="digital-box">
+            <h2>Digimon del Día</h2>
+            <div id="digimon-info">
+                <!-- Aquí se insertará el Digimon del día -->
+            </div>
+        </section>
+        <section id="mapa-interactivo" class="digital-box">
+            <h2>Mapa del Mundo Digital</h2>
+            <img src="../images/MapaDigimon.jpg" alt="Mundo Digital" usemap="#mapa-mundo">
+        </section>
+        <section class="presentation">
+            <img src="../images/Digivice.png" alt="Digivice" class="digivice-img">
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

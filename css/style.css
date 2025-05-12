@@ -1,0 +1,707 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Electrolize';
+    src: url('../fonts/Electrolize-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ShareTechMono';
+    src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'ShareTechMono', monospace;
+    background-color: #012040;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+#top-menu {
+    background-color: #FF6600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#top-menu ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+}
+
+#top-menu ul li a {
+    font-family: 'Electrolize', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#top-menu ul li a:hover {
+    color: #FFD700;
+}
+
+#top-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00FF99;
+    transition: width 0.3s ease;
+}
+
+#top-menu ul li a:hover::after {
+    width: 100%;
+    animation: scanEffect 0.5s infinite;
+}
+
+@keyframes scanEffect {
+    0% { background: #00FF99; }
+    50% { background: #FFD700; }
+    100% { background: #00FF99; }
+}
+
+/* Secciones */
+.digital-box {
+    font-size: 20px;
+    background: rgba(3, 70, 137, 0.8);
+    border: 12px solid #ff9500;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px #FF6600;
+}
+
+.digital-box h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 45px;
+    color: #FFD700;
+    padding: 0px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #FF6600;
+    animation: titleGlow 2s infinite ease-in-out;
+}
+
+@keyframes titleGlow {
+    0% { text-shadow: 0 0 5px #FF6600; }
+    50% { text-shadow: 0 0 15px #FF6600; }
+    100% { text-shadow: 0 0 5px #FF6600; }
+}
+
+.digivice-img {
+    max-width: 200px;
+    margin-top: 20px;
+    animation: digitalize 2s ease-in-out;
+}
+
+@keyframes digitalize {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#main-content {
+    margin: 0%;
+    transition: margin-left 0.3s ease;
+}
+
+#main-content.shifted {
+    margin-left: 250px;
+}
+
+.digi-header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: #049089b1;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(rgba(255, 102, 0, 0.5)1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 102, 0, 0.5)1px, transparent 1px);
+    background-size: 20px;
+    animation: gridPulse 5s infinite ease-in-out;
+    box-shadow: 0 0 30px #00ffd5, 0 0 60px #0398e8, 0 0 100px rgba(122, 135, 4, 0.5);
+}
+
+.digi-header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 5px;
+}
+
+@keyframes gridPulse {
+    0% {background-size: 20px 20px; filter: brightness(1);}
+    50% {background-size: 22px 22px; filter: brightness(1.5);}
+    100% {background-size: 20px 20px; filter: brightness(1) ;}
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+/* Fondo Matrix */
+#matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-icon {
+    width: 140px;
+    height: auto;
+    position: relative;
+    top: -14px;
+    left: 3%;
+    transition: filter 0.3s ease;
+    margin-right: -10px;
+}
+
+.header-icon:hover {
+    filter: brightness(1.5) drop-shadow(0 0 10px #FF6600);
+}
+
+.header-icon:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 102, 0, 0.3), transparent);
+    transform: translate(-50%, -50%);
+    animation: wave 1s ease-out;
+}
+
+@keyframes wave {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+}
+
+.digi-header h1 {
+    font-family: 'Audiowide', sans-serif;
+    color: #FFD700;
+    font-size: 65px;
+    text-shadow: 0 0 10px #FF6600;
+}
+
+.digi-header p {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+    color: #fffbe2de;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+/* Siluetas de Digimon */
+.digimon-silueta {
+    position: absolute;
+    width: 200px;
+    opacity: 0.7;
+    animation: brillitoSilueta 4s infinite ease-in-out;
+}
+
+@keyframes brillitoSilueta {
+    0% { filter: drop-shadow(0 0 5px #FF6600); }
+    50% { filter: drop-shadow(0 0 10px #FF6600); }
+    100% { filter: drop-shadow(0 0 5px #FF6600); }
+}
+
+.digimon-left {
+    left: calc(41% - 200px);
+    top: 20px;
+}
+
+.digimon-right {
+    right: calc(41% - 200px);
+    top: 20px;
+}
+
+.presentation {
+    padding: 20px;
+    text-align: center;
+}
+
+.digivice-img {
+    max-width: 200px;
+    margin-top: 20px;
+    animation: digitalize 2s ease-in-out;
+}
+
+@keyframes digitalize {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.digivice-img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .digi-header h1 {
+        font-size: 36px;
+    }
+    .digimon-silueta {
+        width: 50px;
+    }
+    .digi-header p {
+        font-size: 18px;
+    }
+}
+
+#digimon-del-dia {
+    text-align: center;
+}
+
+.digimon-dia-img {
+    max-width: 480px;
+    background-color: #080361;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #0aa598;
+    transition: transform 0.3s ease;
+}
+
+.digimon-dia-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #00FF99;
+}
+
+#mapa-interactivo {
+    text-align: center;
+    max-width: 85%;
+}
+
+#mapa-interactivo img {
+    max-width: 100%;
+}
+
+/* Estilos para la galería de Digimons */
+#digimon-index {
+    text-align: center;
+}
+
+.series-index {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.series-index li a {
+    font-family: 'Electrolize', sans-serif;
+    color: #00FF99;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #FF6600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.series-index li a:hover {
+    background-color: #FF6600;
+    color: #012040;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+.series-section {
+    margin-bottom: 40px;
+}
+
+.series-section h3 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 37px;
+    color: #00FF99;
+    text-shadow: 0 0 5px #FF6600;
+    margin-bottom: 25px;
+}
+
+.card-box {
+    background: rgba(4, 3, 84, 0.8);
+    border: 7px solid #0059ff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px #00ffc8;
+}
+
+.digimon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.digimon-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid #00ffc8;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.digimon-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #00FF99;
+}
+
+.digimon-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.digimon-card h4 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 22px;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.digimon-card p {
+    font-family: 'ShareTechMono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .digimon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Estilos para series.html */
+.series-poster {
+    max-width: 650px;
+    height: auto;
+    border: 3px solid #FF6600;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.series-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00FF99;
+}
+
+.series-section h4 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 24px;
+    color: #FFD700;
+    margin: 20px 0 10px;
+    text-shadow: 0 0 5px #FF6600;
+}
+
+.series-section p {
+    font-family: 'ShareTechMono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.series-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    columns: 2;
+    column-gap: 20px;
+}
+
+.series-section ul li {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 16px;
+    color: #00FF99;
+    margin-bottom: 10px;
+}
+
+.series-section ul li a {
+    color: #00FF99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.series-section ul li a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 5px #FF6600;
+}
+
+.openings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.opening-video {
+    text-align: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.opening-video h5 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-frame {
+    padding: 10px;
+    background: linear-gradient(45deg, #FF6600, #00FF99);
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00FF99;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 650px;
+}
+
+.video-frame:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #FF6600;
+}
+
+.series-video {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.opening-audio {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.opening-audio h5 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para Gramolamon */
+.player-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(1, 32, 64, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #FF6600;
+    box-shadow: 0 0 15px #00FF99;
+    width: 100%;
+    max-width: 400px;
+}
+
+.song-title {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #FF6600;
+    text-align: center;
+}
+
+.play-pause-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #012040;
+    border: 3px solid #00FF99;
+    color: #00FF99;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-pause-btn:hover {
+    background: #00FF99;
+    color: #012040;
+    box-shadow: 0 0 10px #00FF99;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #00FF99, #FF6600);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #FFD700;
+    border-radius: 5px;
+    width: 0;
+}
+
+.time-display {
+    font-family: 'Electrolize', sans-serif;
+    color: #00FF99;
+    margin: 5px 0;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, #00FF99, #FF6600);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #FFD700;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00FF99;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #FFD700;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00FF99;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #00FF99;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #00FF99;
+    animation: float 5s infinite ease-in-out;
+}
+
+.particle:nth-child(1) { top: 10%; left: 10%; animation: floatUpDown 3s infinite ease-in-out; }
+.particle:nth-child(2) { top: 20%; left: 80%; animation: floatLeftRight 4s infinite ease-in-out; }
+.particle:nth-child(3) { top: 50%; left: 20%; animation: floatUpDown 2.5s infinite ease-in-out; }
+.particle:nth-child(4) { top: 70%; left: 70%; animation: floatLeftRight 3.5s infinite ease-in-out; }
+.particle:nth-child(5) { top: 30%; left: 50%; animation: floatUpDown 4s infinite ease-in-out; }
+
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes floatLeftRight {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+    .series-poster {
+        max-width: 200px;
+    }
+    .series-section ul {
+        columns: 1;
+    }
+    .video-frame {
+        padding: 5px;
+    }
+    .series-video {
+        max-width: 100%;
+    }
+    .opening-video {
+        max-width: 100%;
+    }
+    .player-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .audio-player {
+        max-width: 100%;
+    }
+}
